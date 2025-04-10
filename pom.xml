@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>Turnkey Project - WhiteOak</artifactId>
+    <artifactId>TurnkeyProject-WhiteOak</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -21,6 +21,7 @@
             <artifactId>selenium-java</artifactId>
             <version>4.18.0</version>
         </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
@@ -51,11 +52,6 @@
             <version>20240303</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.example</groupId>
-            <artifactId>TurnkeyProject-WhiteOak</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
 
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
@@ -69,17 +65,30 @@
             <version>1.1.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.13.0</version>
+        </dependency>
+
+        <!-- Optional: Add Log4j if needed -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.20.0</version>
+        </dependency>
+
 
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
-            <version>5.0.0</version>
+            <version>5.2.3</version>
         </dependency>
 
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
-            <version>5.0.0</version>
+            <version>5.2.3</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
