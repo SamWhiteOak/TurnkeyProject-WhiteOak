@@ -4,27 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5736ffa-0e9c-4b61-a38e-fd8274106718" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExternalTestDataFile/TestDataTurnkeyPhase1.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/APIPackages/CreateLeadAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataExtracterExternalFile/ExcelLeadData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataExtracterExternalFile/ReadExcelData.java" afterDir="false" />
+    <list default="true" id="e5736ffa-0e9c-4b61-a38e-fd8274106718" name="Changes" comment="Second Commit with valid data testing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API Response/InvalidTestDataSave.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API Response/ValidTestDataSave.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TurnKey-Phase1/Requirements/DataExtracterExternalFile/PrepareDataForAPI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TurnKey-Phase1/Requirements/DataExtracterExternalFile/TestDataExtracter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TurnKey-Phase1/Requirements/HandleAuthorizationsTokens/GetAccessToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HandleAuthorizationsTokens/GetAccessToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TurnKey-Phase1/Requirements/UtilityClasses/ReadConfigFileData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UtilityClasses/ReadConfigFileData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TurnKey-Phase1/Requirements/UtilityClasses/ReadJSONFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UtilityClasses/ReadJSONFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TurnKey-Phase1/Requirements/UtilityClasses/ReadWriteProgramDataFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UtilityClasses/ReadWriteProgramDataFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TurnKey-Phase1/Requirements/UtilityClasses/WriteIntoConfigFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UtilityClasses/WriteIntoConfigFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TurnKey-Phase1/Requirements/UtilityClasses/WriteJSONFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UtilityClasses/WriteJSONFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExternalTestDataFile/TestDataTurnkeyPhase1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/ExternalTestDataFile/TestDataTurnkeyPhase1.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIPackages/CreateLeadAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIPackages/CreateLeadAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataExtracterExternalFile/ExcelLeadData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataExtracterExternalFile/ExcelLeadData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="XML Properties File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -66,6 +50,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "ignore.preview.features.used": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/samiksha.bhatnagar/IdeaProjects/TurnkeyProject-WhiteOak",
     "project.structure.last.edited": "Libraries",
@@ -135,8 +120,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.CreateLeadAPI" />
-        <item itemvalue="Application.ReadExcelData" />
         <item itemvalue="Application.GetAccessToken" />
+        <item itemvalue="Application.ReadExcelData" />
         <item itemvalue="Application.ReadMultipleSheets" />
       </list>
     </recent_temporary>
@@ -150,6 +135,19 @@
       <option name="presentableId" value="Default" />
       <updated>1744201710570</updated>
     </task>
+    <task id="LOCAL-00001" summary="Second Commit with valid data testing">
+      <option name="closed" value="true" />
+      <created>1744297616923</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744297616924</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Second Commit with valid data testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Commit with valid data testing" />
   </component>
 </project>

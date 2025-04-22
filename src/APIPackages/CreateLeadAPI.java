@@ -1,6 +1,7 @@
 package APIPackages;
 
 import DataExtracterExternalFile.ExcelLeadData;
+import HandleAuthorizationsTokens.GetAccessToken;
 import UtilityClasses.ReadConfigFileData;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -26,6 +27,8 @@ public class CreateLeadAPI {
     String baseURL = readConfigFileData.getBaseURL();
 
     public static void main(String[] args) throws IOException {
+        GetAccessToken getAccessToken = new GetAccessToken();
+        getAccessToken.getAccessToken();
         CreateLeadAPI createLeadAPI = new CreateLeadAPI();
         createLeadAPI.createLeadFromValidExcelRow();
         createLeadAPI.createLeadFromInvalidExcelRow();
@@ -61,16 +64,6 @@ public class CreateLeadAPI {
             // Pick a random row
             Random random = new Random();
             ExcelLeadData randomData = leadDataList.get(random.nextInt(leadDataList.size()));
-
-            // 🔁 Format birthDate for that ONE random row
-            try {
-                SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy/MM/dd");
-                SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy-MM-dd");
-                Date parsed = inputFormat.parse(randomData.getBirthDate());
-                randomData.setBirthDate(outputFormat.format(parsed));
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
 
             // Convert to JSON using Gson
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
@@ -116,6 +109,11 @@ public class CreateLeadAPI {
         if (response.isSuccessful()) {
             System.out.println("✅ " + label + " lead is created successfully");
             saveResponseToFile("CreateLead_" + label + "_SuccessResponse.json", responseBody);
+
+            String requestCRN = validData.optString("companyRegistrationNumber", "");
+            GetAccountDetails getAccountDetails = new GetAccountDetails();
+            getAccountDetails.handleLeadResponse(responseBody, requestCRN);
+
         } else {
             System.out.println("❌ " + label + " lead creation failed");
             saveResponseToFile("CreateLead_" + label + "_ErrorResponse.json", responseBody);
@@ -141,15 +139,4 @@ public class CreateLeadAPI {
         return validData.toString();
     }
 
-    public String readJsonFile(String filePath) throws IOException {
-        File file = new File(System.getProperty("user.dir") + filePath);
-        return FileUtils.readFileToString(file, "UTF-8");
-    }
-
-    public static void writeJsonToFile(String filePath, String jsonString) throws IOException {
-        FileWriter writer = new FileWriter(System.getProperty("user.dir") + filePath);
-        writer.write(jsonString);
-        writer.close();
-        System.out.println("JSON updated and saved to file: " + filePath);
-    }
 }

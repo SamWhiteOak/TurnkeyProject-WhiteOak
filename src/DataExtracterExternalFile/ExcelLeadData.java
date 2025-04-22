@@ -82,6 +82,9 @@ public class ExcelLeadData {
         @ExcelCellName("isLandingPageLead")
         private Boolean isLandingPageLead;
 
+        @ExcelCellName("turnkeyCreatedByUserEmail")
+        private Boolean turnkeyCreatedByUserEmail;
+
         @ExcelCellName("ipAddress")
         private String ipAddress;
 
@@ -181,6 +184,9 @@ public class ExcelLeadData {
 
         public Boolean getIsLandingPageLead() { return isLandingPageLead; }
         public void setIsLandingPageLead(Boolean isLandingPageLead) { this.isLandingPageLead = isLandingPageLead; }
+
+        public Boolean getturnkeyCreatedByUserEmail() { return turnkeyCreatedByUserEmail; }
+        public void setturnkeyCreatedByUserEmail(Boolean turnkeyCreatedByUserEmail) { this.turnkeyCreatedByUserEmail = turnkeyCreatedByUserEmail; }
 
         public String getIpAddress() { return ipAddress; }
         public void setIpAddress(String ipAddress) { this.ipAddress = ipAddress; }
